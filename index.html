@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Lirette - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="toggle" onclick="toggleSidenav()">
+        <i class="fa fa-eye fa-2x"></i>
+    </button>
+    <button class="theme" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon fa-2x"></i>
+    </button>
+     <div class="social-links">
+    <a class="social" href="https://github.com/kylelirette93">
+        <i class="fa-brands fa-github fa-2x"></i>
+    </a>
+    <a class="social" href="https://www.linkedin.com/in/kyle-lirette/">
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+    </a>
+    <a class="social" href="https://www.youtube.com/@KyleLirette">
+        <i class="fa-brands fa-square-youtube fa-2x"></i>
+    </a>
+    <a class="social" href="mailto:lirettekyled@gmail.com" aria-label="E-mail">
+        <i class="fa-solid fa-envelope fa-2x"></i>
+    </a>
+</div>
+    
+    
+
+    <nav id="sidenav">        
+        <ul>           
+            <ul>
+            <h1><span>Kyle Lirette</span></h1></li>
+            <h2>Game Programmer</h2>
+            <img class="portrait" src="images/portrait.png"></ul><br>
+            <li class="nav-item"><a href="#" onclick="handleNavigationClick(this, 'about-me-content', 'About Me')">
+                <i class="fa-solid fa-user-tie fa-bounce"  
+                    style="--fa-bounce-land-scale-x: 1.2;
+                    --fa-bounce-land-scale-y: .8;--fa-bounce-rebound: 5px;"></i>
+                    <span>About Me</span></a></li>
+            <li class="nav-item"><a href="#" onclick="handleNavigationClick(this, 'my-skills-content', 'My Skills')">
+                <i class="fa-solid fa-file fa-bounce"  
+                    style="--fa-bounce-land-scale-x: 1.2;
+                    --fa-bounce-land-scale-y: .8;--fa-bounce-rebound: 5px;"></i>
+                    <span>My Skills</span></a></li>
+            <li class="nav-item"><a href="#" onclick="handleNavigationClick(this, 'portfolio-overview', 'Projects')">
+                <i class="fa-solid fa-gamepad fa-bounce"
+                    style="--fa-bounce-land-scale-x: 1.2;
+                    --fa-bounce-land-scale-y: .8;--fa-bounce-rebound: 5px;"></i>
+                    <span>Projects</span></a></li>
+        
+        </ul> 
+    </nav>
+
+    <main id="main">
+        <header>
+            <h1 id="main-title">Portfolio</h1>
+            <section id="portfolio-overview" class="content-section hidden">
+                <p>Check out my work</p>
+            </section>
+        </header>
+
+        <section id="about-me-content" class="content-section hidden">
+            <p>Hey, I'm Kyle! I'm a game developer from Nova Scotia, Canada and just starting my 
+                second year of Game Programming at NSCC. I've been entrenched in video games since
+                 I was five years old. My first experience was with retro consoles such as Super Nintendo
+                  and N64. When I was young, I explored web development to create Simpson's fan pages,
+                   which I loved doing. As The Simpson's fan community slowly faded into the backdrop,
+                    so did a part of me. However, through the years I continued pondering how games
+                     were brought to life. I pursued various career paths over 30 years of my life
+                      in search of something I couldn't grasp leaving me with a void. One day I was
+                       called to make a change and downloaded Unity. From that point I realized my
+                        true passion was staring me in the face my whole life and I've never looked back.
+                         Curious about the games I've worked on?</p>
+        </section>
+        <section id="my-skills-content" class="content-section hidden">
+            <p>C#, Github, Visual Studio, Unity, Unreal Engine, Visual Scripting, Particle Systems.</p>
+        </section>
+        
+        </main>
+
+    <script src="scripts/sidenav.js"></script>
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/content.js"></script>
+</body>
+</html>

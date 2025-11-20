@@ -44,7 +44,7 @@ body {
 .social-links {
   position: fixed;
   justify-content: center;
-  bottom: 1268px;
+  top: 600px;
   left: 0;
   width: var(--nav-width);
   z-index: 10;

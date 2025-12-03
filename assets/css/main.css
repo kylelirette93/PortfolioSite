@@ -2598,6 +2598,18 @@ input, select, textarea {
 			display: block;
 		}
 
+		.image.icon {
+			display: inline-block;
+			width: 50px;
+			height: 50px;		
+			overflow: hidden;
+		}
+		.image.icon img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
 		.image.left, .image.right {
 			max-width: 40%;
 		}
@@ -2667,6 +2679,9 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.2s ease-out;
 			-ms-transition: -ms-transform 0.2s ease-out;
 			transition: transform 0.2s ease-out;
+		}
+		a.image fit {
+			display: inline-block;
 		}
 
 		a.image:hover img {

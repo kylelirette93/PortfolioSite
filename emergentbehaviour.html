@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+						<script src="assets/js/lightbox.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -25,9 +26,9 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html#brickfury">Portfolio</a></li>
-							<li><a href="generic.html">Personal Projects</a></li>
-							<li><a href="elements.html">About & Resume</a></li>
+							<li class="active"><a href="index.html#emergentbehaviour">Professional Projects</a></li>
+							<li><a href="personalprojects.html">Personal Projects</a></li>
+							<li><a href="aboutandresume.html">About & Resume</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/kyle-lirette/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
@@ -44,7 +45,7 @@
 							<section class="post">
 								<header class="major">
 									<h1>Emergent Behaviour</h1>
-									<p>Screenshots:</p>
+									<p>A boids simulation made in Unity.</p>
 								</header>
 								<div class="row">
 								<article class="box alt">
@@ -61,8 +62,19 @@
 		</article>
 		</div>
 								<p>
+									This was a project for Procedural Generation. The goal was to program emergent behaviour by simulating a sufficient amount 
+									of moving objects interacting with each other. I attempted to create the classic Boids, which is an artificial life simulation
+								    developed by Craig Reynolds. Plenty of research was readily available on this topic and I was happy with what I managed 
+									to create. I programmed a spatial partitioning grid to efficiently manage and find neighbours for entities. The grid divides 
+									the world into cells, allowing an entity to check only its immediate surrounding cells instead of the naive approach of scanning 
+									every single one in the scene. This allowed me to get up to 500 entities on the screen at one time with minimal performance hit, 
+									so I was very proud of that. The boids eventually lose emergent behaviour and start following in a pattern after enough 
+									time. I'm assuming this is because the rules need to be weighted differently. While optimization is great, I think if I could 
+									do this again I'd focus on functionality first and optimization second.
 								</p>
-                                
+                                <div class="image-wrapper"><img class="lightbox-image" src="images/eb-code.png" alt="code"></div>
+							<div id="lightbox-overlay" class="lightbox-overlay"></div><br>
+							
 									<a href="https://github.com/kylelirette93/EmergentBehaviour" class="image icon"><img src="images/github_icon.png" alt=""/></a>
 								<br>
 								
@@ -74,7 +86,7 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="#">
+							<form method="post" action="https://formspree.io/f/mnnbagzn">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
@@ -96,17 +108,17 @@
 						</section>
 						<section class="split contact">
 							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
+								<h3>Location</h3>
+								<p>
+								Nova Scotia, Canada</p>
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
+								<p><a href="tel:+19028146045">(902) 814-6045</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
+								<p><a href="mailto:lirettekyled@gmail.com">lirettekyled@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>

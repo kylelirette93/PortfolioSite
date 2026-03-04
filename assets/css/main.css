@@ -4791,3 +4791,6 @@ body.lightbox-active .lightbox-overlay {
 		}
 
 	}
+	#intro {
+    min-height: 100vh;
+}

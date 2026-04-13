@@ -2060,6 +2060,11 @@ input, select, textarea {
 		border-color: #eeeeee;
 	}
 
+	.box .image.right.video-wrapper {
+		max-width: 50%;
+		width: 100%;
+	}
+
 /* Button */
 
 	input[type="submit"],
@@ -2671,14 +2676,16 @@ body.lightbox-active .lightbox-overlay {
 
 .video-container {
     width: 100%;
-    max-width: 1200px; /* Keeps it from getting too large on desktop */
-    margin: 20px auto;   /* Centers the video */
+    max-width: 100%; /* Keeps it from getting too large on desktop */
+    margin: 20px 0;   /* Centers the video */
 }
 
 .video-container iframe {
     width: 100%;
+	height: auto;
     aspect-ratio: 16 / 9; /* Maintains the correct video shape */
 	border: none;
+	display: block;
 }
 
 /* Keyframes for Continuous Color Cycling */

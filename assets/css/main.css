@@ -2056,6 +2056,7 @@ input, select, textarea {
 		}
 
 	.box {
+		display: flow-root;
 		border-color: #eeeeee;
 	}
 
@@ -2666,6 +2667,18 @@ body.lightbox-active .lightbox-overlay {
     /* Subtle movement and contrast for a better effect */
     filter: contrast(1.1); 
     transition: all 0.2s ease-in-out; 
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1200px; /* Keeps it from getting too large on desktop */
+    margin: 20px auto;   /* Centers the video */
+}
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Maintains the correct video shape */
+	border: none;
 }
 
 /* Keyframes for Continuous Color Cycling */

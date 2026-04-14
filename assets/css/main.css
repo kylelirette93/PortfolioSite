@@ -4839,6 +4839,10 @@ color: #ad0101 !important;
     perspective: 1000;
     -webkit-backface-visibility: hidden;
 }
+ul.icons li {
+	margin: 1rem 0 !important;
+	padding: 1rem 0 !important;
+}
 
 		@media screen and (max-width: 980px) {
 

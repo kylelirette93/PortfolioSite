@@ -2770,6 +2770,16 @@ body.lightbox-active .lightbox-overlay {
 
 		@media screen and (max-width: 736px) {
 
+			.image.right, .image-left {
+				display: block;
+				float: none;
+				max-width: 100%;
+				margin: 0 0 20px 0;
+				width: 100%;
+			}
+			.video-container {
+				margin: 10px 0;
+			}
 			.image.fit {
 				margin: 2rem 0;
 			}

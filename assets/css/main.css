@@ -4822,8 +4822,23 @@ color: #ad0101 !important;
 					height: 4rem;
 					line-height: 4rem;
 				}
-
+				.icons a.fa-file-pdf {
+        /* Reduce scale slightly so it doesn't clip off-screen */
+        transform: scale(2.5) !important; 
+        /* Reset margins for smaller screens */
+        margin: 1.5rem 1rem !important; 
+        /* Fixes the "disappearing" icon on tap */
+        -webkit-transform: scale(2.5);
+        display: inline-block !important;
 			}
+			.icons a.fa-file-pdf:hover {
+        transform: scale(2.5) !important;
+    }
+	.icons a.fa-file-pdf {
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    -webkit-backface-visibility: hidden;
+}
 
 		@media screen and (max-width: 980px) {
 

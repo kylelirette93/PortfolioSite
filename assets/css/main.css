@@ -4824,11 +4824,11 @@ color: #ad0101 !important;
 				}
 				.icons a.fa-file-pdf {
         /* Reduce scale slightly so it doesn't clip off-screen */
-        transform: scale(2.5) !important; 
+        transform: scale(3.5) !important; 
         /* Reset margins for smaller screens */
-        margin: 1.5rem 1rem !important; 
+        margin: 3rem 0 3rem 0 !important; 
         /* Fixes the "disappearing" icon on tap */
-        -webkit-transform: scale(2.5);
+        -webkit-transform: scale(3.5);
         display: inline-block !important;
 			}
 			.icons a.fa-file-pdf:hover {

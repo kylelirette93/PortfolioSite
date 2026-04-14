@@ -46,33 +46,29 @@
 								<header class="major">
 									<h1>Minecraft Bedrock Demo</h1>
 								</header>
-								<div class="row">
-								<article class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/tex01.png" alt=""></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/tex02.png" alt=""></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/tex03.png" alt=""></span></div>
-											<!-- Break -->
-											<div class="col-4"><span class="image fit"><img src="images/tex04.png" alt=""></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/tex05.png" alt=""></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/tex06.png" alt=""></span></div>
-										</div>
-								
-		</article>
+								<div class="box">
+								<div class="video-container">
+    <span class="image right video-wrapper">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/b_ftgAQHUNw?si=lPH52FzzPLoWoZcJ" title="YouTube video player" frameborder="0" allow="accelerometer;
+								 autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 		</div>
 								<p>
-									The Extraction is a year long project where I get to work on a team of 5. I've taken on both Sound Designer and Programmer for the project.
-									The soundtrack is entirely original music and I got to learn a new software called Reaper through this project. The voice acting for enemies
-									and Tony is done by yours truly and some of the sound effects in the game are foley. I programmed a level manager, interaction system,
-									enemy AI, audio system, dialogue system, powerups and a custom editor to assist other developer's among many other tasks.
-									Below you can see a snippet of code, where I utilized the strategy pattern in order to make the enemies more scalable. 
+									I experimented in creating a Minecraft Mod in Bedrock edition. I built a data driven framework based on Minecraft Engine, where behaviors, components, component groups and events
+									are isolated in JSON data and tuneable. This allows me to swap components when certain events are triggered, rather than overly complex logic. This approach was implemented
+									with efficiency in mind, whereas the engine doesn't have to evaluate logic every tick. Also I planned to
+									keep things as simple as possible where I'm unfamiliar with Minecraft scripting API. I not only learned the fundamentals of TypeScript but I transpiled TypeScript to 
+									JavaScript using NodeJS in order to allow for easier debugging and Intellisense. 
+									For the UI I used an Action Form, which returns a promise object through a callback, that way the program will wait for a button to be pressed before executing logic.
+									When a button is clicked, I'm using runTimeout from the system class in order to make sure component references are valid.
+									The main challenges I faced were learning a new language and the syntax involved. Thankfully my skills in C# were transferrable.
 								</p>
-								<div class="image-wrapper"><img class="lightbox-image" src="images/tex-code.png" alt="code"></div>
+								</div>
+								<div class="image-wrapper"><img class="lightbox-image" src="images/mc-code.png" alt="code"></div>
 							<div id="lightbox-overlay" class="lightbox-overlay"></div><br>
 									<a href="https://github.com/kylelirette93/MinerBotMod" class="image icon"><img src="images/github_icon.png" alt=""/></a>
 								<br>
 								
-									<a href="index.html#theextraction" class="button">Back to Portfolio</a>
+									<a href="index.html#minecraftdemo" class="button">Back to Portfolio</a>
 							</section>
 
 					</div>

@@ -11,6 +11,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+    /* Add this to your <head> or at the top of the file if you can't access main.css */
+    .artist-wrapper {
+        display: block;
+        text-align: center; /* Default for mobile */
+    }
+
+    @media screen and (min-width: 737px) {
+        .artist-wrapper {
+            text-align: right; /* Flips to the right only on desktop */
+        }
+    }
+</style>
 	</head>
 	<body class="is-preload">
 
@@ -43,7 +56,16 @@
 						 <section class="post">
 							<div class="box">
 								<p><span class="image right"><img src="images/kyle.png" class="image portrait" alt="" 
-									style="border-radius: 50%; width: 75%; height: 75%; margin-left: 20%" /></span>
+									style="border-radius: 50%; width: 75%; height: 75%; margin-left: 20%" />
+									<span style="display: block; text-align: center; font-size: 0.8rem; line-height: 1.2; margin: 1rem 0rem 0 2rem;">
+            Artist Credit:<br />
+            <a href="https://sites.google.com/view/ashleymacnuttportfolio/portfolio" 
+               target="_blank" 
+               style="color: #212931; border-bottom: solid 1px #212931; text-decoration: none;">
+               <strong>Ashley MacNutt</strong>
+            </a>
+			</span>
+        </span>
 									HEY! I'M KYLE. I'm a game developer from Nova Scotia, Canada.
 									Video games have been a part of my life since I was 5, I was 
 									also curious how they were made but never pursued it.
@@ -53,19 +75,48 @@
 									 free time I'm always learning new skills. Feel free to contact me if 
 									 you'd like to collaborate or know of somewhere I'd fit.
 									</p>
-									<b>Click the icon below to view my resume.</b>
-									<ul class="icons">
-										<li>
-									<a href="Resume_KyleLirette.pdf" 
-   									class="icon solid alt fa-file-pdf" 
-   									download="Resume_KyleLirette.pdf" 
-   									style="font-size: 2.5rem; color: #ff0000; border-bottom: none;">
-   									<span class="label">Resume</span>
-</a>
-									</a>
-									</li>
-									</ul>
-							</div>
+									
+									<section class="post">
+										
+										<div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; margin-top: 2rem;">
+
+    <div class="box" style="flex: 1 1 600px; max-width: 100%; margin-bottom: 1rem;">
+        <h3 style="text-align:center">My Skills</h3>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; align-items: center;">
+            <img src="images/unity-icon.png" title="Unity" width="32" height="38">
+            <img src="images/csharp-icon.png" title="C Sharp" width="56" height="56" style="margin-top: -0.7rem">
+            <img src="images/visualstudio.png" title="Visual Studio" width="38" height="38">
+            <img src="images/vscode.png" title="Visual Studio Code" width="38" height="38">
+            <img src="images/github_icon.png" title="GitHub" width="42" height="42">
+            <img src="images/ts-logo.png" title="TypeScript" width="38" height="38">
+            <img src="images/html5-icon.png" title="HTML5" width="38" height="38">
+            <img src="images/unreal-icon.png" title="Unreal Engine" width="38" height="38">
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 23px; margin-top: 1rem; align-items: center;">     
+            <img src="images/css-icon.png" title="CSS" width="38" height="38">                      
+            <img src="images/json.png" title="JSON" width="38" height="38">
+            <img src="images/blender.png" title="Blender" width="38" height="42">
+            <img src="images/aseprite.png" title="Aseprite" width="38" height="38">
+            <img src="images/reaper.png" title="Reaper" width="38" height="38">
+            <img src="images/audacity-icon.png" title="Audacity" width="38" height="38">
+            <img src="images/boscaceoil.png" title="Bosca Ceoil" width="36" height="36">
+            <img src="images/dotween.png" title="Dotween" width="38" height="38">
+        </div>
+    </div>
+
+</div> <div style="margin-top: 1.5rem;">
+    <b>Click the icon below to view my resume.</b>
+    <ul class="icons">
+        <li>
+            <a href="Resume_KyleLirette.pdf" class="icon solid alt fa-file-pdf" download="Resume_KyleLirette.pdf" style="font-size: 2.5rem; color: #ff0000; border-bottom: none;">
+                <span class="label">Resume</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</section>
 									</section>
 					</div>
 
